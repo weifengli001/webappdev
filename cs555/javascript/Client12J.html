@@ -1,0 +1,60 @@
+<html>
+ <head>
+    <title> Adder with Data Validation - Use of Functions </title>
+<script language="javascript">
+<!--
+  //--------------- Validate() --------------------------
+  function Validate(val, position)
+  {
+   res = ""
+   if (!isNaN(val))
+     res = parseFloat(val)
+   else
+    {
+     alert("You must enter a Number in box" + position);
+     res = "";
+     if (position == 1)
+        document.frmCalc.val1.value=""
+     else
+        document.frmCalc.val2.value=""
+    }
+    return res;
+   }
+//---------------------------------------------------------
+
+//-------------------cmdAdd_Onclick()---------------
+  function cmdAdd_onclick()
+  {
+   var v1, v2, rs
+   var v1val, v2val
+   //--------------- Read and validate value 1
+   v1 = document.frmCalc.val1.value
+   v1val = Validate(v1,1)
+   if (v1val == "")
+      return;
+   //-------------- Read and validate value 2
+   v2 = document.frmCalc.val2.value
+   v2val = Validate(v2,2)
+   if (v2val == "")
+     return;
+   rs = v1val + v2val;    // do the calculation
+   document.frmCalc.RESULT.value = rs
+  }
+//-------------------------------------------------
+-->
+</script>
+</head>
+<body>
+  <h1> Web Adder with Data Validation </h1>
+  <h3> User Defined Functions </h3>
+  <pre>
+    <form name="frmCalc" method="" action="">
+       Value1: <input name="val1">
+       Value2: <input name="val2">
+	       ----------------------------
+       Result: <input name="RESULT">
+       <input type="button" name="cmdAdd" value="+" onclick="cmdAdd_onclick()">
+    </form>
+  </pre>
+</body>
+</html>

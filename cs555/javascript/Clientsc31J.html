@@ -1,0 +1,81 @@
+<html>
+ <head>
+  <!-- Addition of OnBlur event handler -->
+  <title> Feedbackk on Your Shopping Experience with WebShop.com </title>
+<script language="Javascript">
+<!--
+ function window_OnLoad() {
+  frmFeedback.txtEmail.focus();
+ }
+
+ function txtEmail_OnBlur() {
+   var strEmail;
+   strEmail =  frmFeedback.txtEmail.value ;
+   if (strEmail == "") {
+     alert("You must not leave E-mail blank");
+     frmFeedback.txtEmail.focus();}
+ }
+-->
+</script>
+<script Language = VBSCript>
+<!--
+ Sub cmdSubmit_OnClick
+ Dim strMail,strComments,strMsg,nCount,strRating
+ strMail = frmFeedback.txtEmail.Value
+ strComments =  frmFeedback.txaComments.Value
+ If Trim(strMail) = "" Then
+     MsgBox "You must provide an E-mail address.",16
+     Else If Trim(strComments) = "" Then
+      MsgBox "You must provide Comments.",16
+       Else
+          For nCount = 1 TO 6
+             If frmFeedback.Elements(nCount).Checked Then
+                strRating = frmFeedback.Elements(nCount).Value
+                Exit For
+             End if
+          Next
+          strMsg = "You rated our Your Experience as: " & strRating & _
+         						"." & Chr(10) & Chr(13)
+          strMsg = strMsg & "Your E-mail address is " & frmFeedback.txtEmail.Value
+          If frmFeedback.shopagain(0).Checked = True Then
+     	     strMsg = strMsg & Chr(13) & Chr(10) & "You will shop again with us "
+	  Else
+	     strMsg = strMsg & Chr(13) & Chr(10) & _
+				"Your shopping experience has been negative"
+ 	  End If
+          MsgBox strMsg,48
+          MsgBox "Your comments have been submitted.",48
+       End if
+  End if
+End Sub
+-->
+</script>
+ </head>
+ <body onLoad="window_OnLoad();">
+ <h2> Feedback on Your Shopping Experience with WebShop.com </h2>
+ <h3> Please fill out the feedback form below.
+      Your comments are highly appreciated </h3>
+ <hr>
+ <form name="frmFeedback">
+  <pre>
+    <b>E-mail Address:</b> <input name="txtEmail" size="35" maxlength="35" value = ""
+                     onBlur="txtEmail_OnBlur()">
+    <b>Your shopping Experience with WebShop.com has been:</b>
+    Rating: <input type="radio" name="rating" value="Excellent" CHECKED> Excellent
+            <input type="radio" name="rating" value="Very Good" > Very Good
+            <input type="radio" name="rating" value="Good" > Good
+            <input type="radio" name="rating" value="Fair" > Fair
+            <input type="radio" name="rating" value="Poor" > Poor
+
+    <b>Would you shop again with us:</b>
+		<input type="radio" name="shopagain" CHECKED value="Yes"> YES
+		<input type="radio" name="shopagain" value="No"> NO
+    <b>General Comments</b>
+
+    <textarea name="txaComments" rows="5" cols="60"></textarea>
+    <input type="button" name="cmdSubmit" value="Submit Feedback">
+      <input type="reset" value="RESET">
+  </pre>
+ </form>
+ </body>
+</html>

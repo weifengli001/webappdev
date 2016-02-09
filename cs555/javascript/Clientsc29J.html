@@ -1,0 +1,32 @@
+<!-- Use of Javascript Date difference capabilities -->
+<html>
+ <head>
+  <title> Date difference Example </title>
+ <script language="Javascript">
+ <!--
+  function cmdEnter_OnClick() {
+     var bd;
+     bd =new Date(frmBday.txtBday.value);
+     now = new Date();
+     var y1, m1, d1;
+     y1 =  Math.floor((now - bd)/(1000 * 60 * 60 * 24 * 365)) ;// age in years
+     m1 = Math.floor((now - bd)/(1000 * 60 * 60 * 24 * 365) * 12) ;// age in months
+     d1 = Math.floor((now - bd)/(1000 * 60 * 60 * 24)) ;// age in days
+     alert("Your age in years = " + y1 + "\n" + "age in months = " + m1 + "\n" +
+             "age in days = " + d1);
+  }
+-->
+</script>
+</head>
+ <body>
+   <h3> Test of JavaScript Date difference Capabilities </h3>
+   <hr>
+   <form name="frmBday">
+   Please enter your Birthday :
+   <input name="txtBday" value="">
+   <br>
+     <input name="cmdEnter" type="Button" value="Click to Calculate Age"
+            onClick="cmdEnter_OnClick();">
+   </form>
+ </body>
+</html>

@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title> Client side scripting - Javascript Reading Data from List Box </title>
+
+  <script language="JavaScript">
+  <!--
+    function cmdSubmit_OnClick() {
+     var i, strFruit ;
+     strFruit = "";
+     for (i=0; i < document.frmData.lstFruit.length; i++) {
+	if (document.frmData.lstFruit[i].selected == true)
+	  strFruit = strFruit + "\t" + document.frmData.lstFruit[i].value + "\n" ;
+       }
+     alert(" Fruit Choice = " + "\n" + strFruit);
+   }
+  -->
+  </script>
+
+  </head>
+  <body>
+    <h2>  Client Side Scripting  </h2>
+    <h3>  Reading Data from the List Box Control</h3>
+    <h4>  (Use SIZE attribute to change a drop down to a List Box)
+					 </h4>
+    <h4> (Use MULTIPLE attribute to allow multiple Selections)
+					 </h4>
+    <hr>
+    <h4> Choose one or more Fruits </h4>
+    <form name="frmData">
+     <pre>
+     	<select name="lstFruit" size="4" multiple>
+      	  <option value="Orange"> Orange
+      	  <option value="Apple" SELECTED> Apple
+     	  <option value="Bannana"> Bannana
+	     <option value="Mango"> Mango
+ 	</select>
+      <hr>
+
+      <input type="button" value="Submit Fruit Choices" name="cmdSubmit"
+             onClick="cmdSubmit_OnClick();">
+     </pre>
+    </form>
+  </body>
+</html>

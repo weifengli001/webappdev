@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="form_handler.asp">
+        <h1>Login Form</h1>
+        <label for="UserName">Username</label>
+        <input type="text" id="UserName"/><br/>
+
+        <label for="Password">Password</label>
+        <input type="password" id="Password"><br/>
+        <label>
+        Gender:
+            <input type="radio" name="gender" id="gender_male"/>
+            <label for="gender_male">Male</label>
+            <input type="radio" name="gender" id="gender_female"/>
+            <label for="gender_female">Female</label>
+
+        </label>
+        <br/>
+        <label for="accepted">Terms of Agreement Accepted?</label>
+        <input type="checkbox" id="accepted"/><br/><br/>
+        <input type="reset" value="Clear"/><br/><br/>
+        <input type="submit" value="Submit Information"/>
+    </form>
+</body>
+</html>

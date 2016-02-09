@@ -1,0 +1,39 @@
+<!-- An Example of Using String Processing Functions -->
+<html>
+ <head>
+  <title> String Functions Example </title>
+ <script language="javascript">
+ <!--
+function myTrim(myText) {
+    x = myText;
+    while (x.substring(0,1) == ' ')
+	x = x.substring(1);
+    while (x.substring(x.length-1,x.length) == ' ')
+	x = x.substring(0,x.length-1);
+    return x
+}
+
+
+  function cmdEnterClick()
+  {
+     var s1;
+     s1 = myTrim(prompt("Please Enter Your Full Name", "your name here"))
+     var strFirst, strLast, strMiddle
+     var posBlank
+     posBlank = s1.indexOf(" ",0) ; // 0 is start position
+     var CountFromRight
+     CountFromRight = s1.length-posBlank
+     alert("First Name = " + s1.substring(0,posBlank) + "\n" +
+	     "Last Name = " + myTrim(s1.substring(posBlank,posBlank+CountFromRight)));
+   }
+ -->
+</script>
+</head>
+ <body>
+   <h3> String Processing Example </h3>
+   <h2> Click on the Button below to do some String Processing </h2>
+   <hr>
+   <input type="button" name="cmdEnter" value="Test of String Functions"
+    onclick="cmdEnterClick();">
+ </body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title> Client side scripting - Javascript-Reading Data from Text Boxes </title>
+
+  <script language="Javascript">
+  <!--
+   function ReadData() {
+     alert(" Name Entered = " + document.frmData.txtName.value +
+            " ID Entered = " + document.frmData.txtID.value);
+  }
+  -->
+  </script>
+
+  </head>
+  <body>
+    <h2> <center> Client Side Scripting using JAVASCRIPT </center> </h2>
+    <H3> <center> Text Box Attributes and Reading Data From Them </center></H3>
+    <hr>
+    <form name="frmData">
+      <pre>
+        Name: <input type="text" name="txtName" size="30" maxlength="28" tabindex="1">
+        ID :  <input type="text" name="txtID" size="15" maxlength="12" tabindex="2">
+
+        <input type="button" value="ENTER Data" name="cmdEnter" onClick="ReadData();">
+        <input type="reset"
+         name="cmdReset" value="RESET">
+      </pre>
+    </form>
+  </body>
+<html>

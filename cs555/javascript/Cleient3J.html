@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title> Client side Javascript-Reading Data from Check Boxes </title>
+
+  <script language="JavaScript">
+  <!--
+    function ReadCheckBoxes() {
+     var strChoice
+     strChoice = "";  // initialization is important
+     if (document.frmData.chkSalad.checked)
+       strChoice = "Salad" + "\n" ;
+     if (document.frmData.chkRice.checked == true)
+       strChoice = strChoice + "Rice" + "\n" ;
+     if (document.frmData.chkFish.checked == true)
+       strChoice = strChoice + "Fish" + "\n" ;
+     if (document.frmData.chkDsrt.checked == true)
+       strChoice = strChoice + "Dessert" + "\n" ;
+     alert(" Dinner Choices = " + "\n" + strChoice);
+   }
+  -->
+  </script>
+
+  </head>
+  <body>
+    <h2> <center> Client Side Scripting </center> </h2>
+    <h3> <center> Using the Check Box INPUT CONTROL </center></h3>
+    <hr>
+    Check the Items You would like in your Dinner
+    <form name="frmData">
+      <pre>
+         <input type="checkbox" name="chkSalad"> Salad
+         <input type="checkbox" name="chkRice"> Rice
+         <input type="checkbox" name="chkFish" CHECKED> Fish
+         <input type="checkbox" name="chkDsrt"> Dessert
+      </pre>
+      <input type="button" name="cmdCB" value="Submit Choices" onClick="ReadCheckBoxes();">
+    </form>
+  </body>
+</html>

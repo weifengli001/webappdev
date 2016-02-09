@@ -1,0 +1,31 @@
+<html>
+ <head>
+  <!-- Example of Window_Onload Event -->
+  <title> A Colorful Start to the Web Page </title>
+<script language="JavaScript">
+<!--
+ function window_onLoad() {
+  var colornum, BColor;
+  colornum = Math.round(Math.random() * 8);
+  alert(colornum);
+  switch(colornum) {
+    case 0 : BColor = "green"; break;
+    case 1 : BColor = "blue";  break;
+    case 2 : BColor = "yellow";break;
+    case 3 : BColor = "lime";  break;
+    case 4 : BColor = "aqua";  break;
+    case 5 : BColor = "silver"; break;
+    case 6 : BColor = "purple"; break;
+    case 7 : BColor = "orange"; break;
+   default : BColor = "red";
+  }
+  document.bgColor = BColor ;
+}
+-->
+</script>
+ </head>
+ <body onLoad="window_onLoad();">
+ <h2> Possibly a A different Color each time the
+           document is loaded or refreshed </h2>
+  </body>
+</html>

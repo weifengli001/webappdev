@@ -1,0 +1,72 @@
+<html>
+<head>
+<script language="JavaScript">
+<!--
+function myTrim(myText) {
+    x = myText;
+    while (x.substring(0,1) == ' ')
+	    x = x.substring(1);
+    while (x.substring(x.length-1,x.length) == ' ')
+	    x = x.substring(0,x.length-1);
+    return x
+}
+
+
+function cmdSubmit_OnClick () {
+  var lcemail,lcComments,lcMsg,lnCount,lcRating;
+  lcemail = frmGuestBook.txtemail.value ;
+  lcComments =  frmGuestBook.txacomments.value ;
+  if (myTrim(lcemail) == "")
+     alert("You must provide an E-mail address.");
+  else if (lcComments == "")
+          alert( "You must provide a comment.");
+       else {
+          for (lncount = 1; lncount <= 6; lncount++) {
+             if (document.frmGuestBook.elements[lncount].checked == true) {
+                lcRating = document.frmGuestBook.elements[lncount].value ;
+                break; }
+             }
+          lcMsg = "You rated our web site as: " + lcRating + "." + "\n \t" ;
+          lcMsg = lcMsg + "Your E-mail address is " + frmGuestBook.txtemail.value
+          lcMsg = lcMsg + "\nComments:" +frmGuestBook.txacomments.value
+          if (frmGuestBook.shopagain[0].Checked == true)
+     	     lcMsg = lcMsg + "\n" + "You will shop again with us ";
+	  else
+	     lcMsg = lcMsg + "\n" + "Your shopping experience has been negative";
+
+	  alert(lcMsg) ;
+          alert("Your comments have been submitted.");
+       }
+ }
+-->
+</script>
+
+<title> Javascript - User Input Examples</title>
+<h2>Guest Book</h2>
+<h4>What do you think of our Web site? Please provide your comments.</h4>
+<hr>
+</head>
+<body>
+<form name="frmGuestBook">
+<pre>
+E-mail Address: <input name="txtemail" size="40" maxlength="40" value = "">
+
+Rating: <input type="radio" name="rating" value="Excellent" CHECKED> Excellent
+        <input type="radio" name="rating" value="Very Good" > Very Good
+        <input type="radio" name="rating" value="Good" > Good
+        <input type="radio" name="rating" value="Fair" > Fair
+        <input type="radio" name="rating" value="Poor" > Poor
+
+<b>General Comments</b>
+<textarea name="txacomments" rows="5" cols="80"></textarea>
+    <b>Would you shop again with us:</b>
+		<input type="radio" name="shopagain" CHECKED value="Yes"> YES
+		<input type="radio" name="shopagain" value="No"> NO
+
+
+<input type="button" name="cmdSubmit" value="Submit Comments"
+             onClick="cmdSubmit_OnClick();"> <input type="reset" value="Reset">
+</pre>
+</form>
+</body>
+</html>

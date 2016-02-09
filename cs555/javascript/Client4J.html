@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title> Client side scripting - Reading Data from Radio Buttons </title>
+
+  <script language="javascript">
+  <!--
+   function cmdSubmit_OnClick() {
+     var i, strChoice ;
+     for (i = 0; i < window.frmData.optDinnerItem.length; i++) {
+        if (document.frmData.optDinnerItem[i].checked==true)
+          strChoice = window.frmData.optDinnerItem[i].value + "\n" ;
+       }
+     for (i = 0; i < window.frmData.optDessertItem.length; i++) {
+        if (document.frmData.optDessertItem[i].checked == true)
+          strChoice = strChoice + window.frmData.optDessertItem[i].value + "\n" ;
+      }
+     alert (" Dinner Choices = " + "\n" + strChoice);
+   }
+  -->
+  </script>
+
+  </head>
+  <body>
+    <h2 align="center">Client Side Scripting  </h2>
+    <h3 align="center">  Using the Radio Button Control </h3>
+    <h4 align="center">  (Also referred to as Option Button sometimes)</h4>
+    <hr>
+    <h4> Choose a main Dinner Item </h4>
+    <form name="frmData">
+     <pre>
+      Pizza <input type="radio" name="optDinnerItem" value="Pizza" CHECKED>
+      Steak <input type="radio" name="optDinnerItem" value="Steak">
+      Fish  <input type="radio" name="optDinnerItem" value="Fish">
+      <HR>
+    <h4> Choose a Dessert </h4>
+      Chocolate Cake  <input type="radio" name="optDessertItem" value="Chocolate Cake" CHECKED>
+      Cheese Cake     <input type="radio" name="optDessertItem" value="Cheese Cake">
+      Icecream Sundae <input type="radio" name="optDessertItem" value="Icecream Sundae">
+      <HR>
+
+      <INPUT type="button" value="Submit Dinner and Dessert Choices" name="cmdSubmit"
+                 onClick="cmdSubmit_OnClick();">
+    </pre>
+    </form>
+  </body>
+</html>

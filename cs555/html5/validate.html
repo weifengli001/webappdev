@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="a.asp">
+    <label for="firstname">First Name:</label>
+    <input type="text" name="firstname" id="firstname" required>
+    <label for="phonenum">Phone Number:</label>
+    <input type="text" name="phonenum" id="phonenum" required
+        pattern="^\(\d{3}\) \d{3}-\d{4}$"
+           title="Phone number of form () xxx-xxxx required"
+    >
+    <input type="submit" name="Submit" id="submit">
+    </form>
+</body>
+</html>

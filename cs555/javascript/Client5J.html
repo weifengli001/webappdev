@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title> Client side scripting - Reading Data from Drop Down List Box </title>
+
+  <script language="javascript">
+  <!--
+   function cmdSubmit_OnClick() {
+     var strFruit ;
+
+     strFruit = document.frmData.ddlFruit.value + "\n" ;
+     alert(" Fruit Choice = " + "\n" + "\t" + strFruit) ;
+   }
+  -->
+  </script>
+
+  </head>
+  <body>
+    <h2 align="center">  Client Side Scripting  </h2>
+    <h3 align="center">Reading Data from the Drop Down List Box Control </h3>
+    <h4 align="center">  (SELECT and OPTION Tags are used to create the List Box)
+					 </h4>
+    <hr>
+    <h4> Choose a Fruit </h4>
+    <form name="frmData">
+     <pre>
+     	<select name="ddlFruit">
+      	  <option value="Orange"> Orange
+      	  <option value="Apple" SELECTED> Apple
+     	  <option value="Bannana"> Bannana
+	        <option value="Mango"> Mango
+ 	</select>
+      <hr>
+
+      <input type="button" value="Submit Fruit Choices" name="cmdSubmit"
+            onClick="cmdSubmit_OnClick();">
+     </pre>
+    </form>
+  </body>
+</html>

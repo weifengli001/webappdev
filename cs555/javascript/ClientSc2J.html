@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title> Client side Javascript - Password Attribute, Document OnClick Event </title>
+
+  <script language="javascript">
+  <!--
+   function documentClick()
+   {
+     alert(" Name Entered = " + document.frmData.txtName.value + "\n" +
+            " Password Entered = " + document.frmData.txtPassword.value);
+   }
+  -->
+  </script>
+
+  </head>
+  <body onclick="documentClick()">
+    <h2> <center> Client Side Scripting </center> </h2>
+    <h3> <center> Password Attribute, Document OnClick Event </center></h3>
+    <hr>
+    <form name="frmData">
+      <pre>
+        Name: <input type="text" name="txtName" size="30" maxlength="28" tabindex="1" value="hi">
+        Password:  <input type="password" name="txtPassword" size="10" tabindex="2">
+
+        <input type="reset" name="cmdReset" value="RESET">
+      </pre>
+    </form>
+    Use TAB key to Set Focus to a Text Box. Then Click Mouse After Entering Data
+  </body>
+</html>

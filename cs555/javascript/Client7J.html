@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title> Client side scripting - Reading Data from TEXT AREA </title>
+
+  <script language="javascript">
+  <!--
+   function cmdSubmit_OnClick() {
+       alert(" Text typed in Text Area = " + "\n" +
+	            document.frmData.txaComments.value);
+   }
+  -->
+  </script>
+
+  </head>
+  <body>
+    <h2>  Client Side Scripting </h2>
+    <h3>  Reading Data from the Text Area </h3>
+    <h4>  (Text Area behaves like a multiline Text Box)
+					 </h4>
+   <pre>
+   Please provide Some Comments about Our Web Site:
+   <form name="frmData">
+
+     <texarea name="txaComments" rows="5" cols="40"> Comments:
+     </texarea>
+     <hr>
+
+     <input tyoe="button" value="Submit Comments" name="cmdSubmit"
+              onClick="cmdSubmit_OnClick();">
+    </form>
+   </pre>
+  </body>
+</html>

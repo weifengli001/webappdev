@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function processForm(){
+            var fname = window.document.f1.txtFirstName.value;
+            var lname = window.document.f1.txtLastName.value;
+            alert(fname +' ' + lname);
+        }
+    </script>
+</head>
+<body>
+<pre>
+</pre>
+<form name ="f1">
+    First Name: <input name="txtFirstName">
+    Last Name: <input name="txtLastName">
+    <input type="button" name="Regester" value="Regester" onclick="processForm();">
+</form>
+</body>
+</html>

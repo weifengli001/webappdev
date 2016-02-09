@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title> Client side scripting - Collecting Filename from FILE Control </title>
+
+  <script language="javascript">
+  <!--
+   function cmdSubmit_OnClick() {
+       alert(" File Selected = " + "\n" +
+	            document.frmData.filDatafile.value) ;
+   }
+  -->
+  </script>
+  </head>
+  <body>
+    <h2>  Client Side Scripting  </h2>
+    <h3>  Collecting File Name from FILE type INPUT Control </h3>
+   <pre>
+   Click on the Button to Show File Open Dialog:
+   <form name="frmData">
+
+     <input type="file" name="filDatafile" size="50">
+     <hr>
+     <input type="button" value="Check File Name Submitted" name="cmdSubmit"
+            onClick="cmdSubmit_OnClick();">
+    </form>
+   </pre>
+  </body>
+</html>

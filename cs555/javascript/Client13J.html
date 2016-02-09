@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title> Client side scripting Javascript - Writing your own Functions </title>
+
+  <script language="JavaScript">
+  <!--
+    function Find_min(v1,v2,v3) {
+   // A simple function to be find the minimum of three numbers
+     var min ;
+     min = v1;
+     if (v2 < min) min = v2 ;
+     if (v3 < min) min = v3 ;
+     return min;
+    }
+
+   function cmdMin_OnClick(){  //Event handler for the Calculate Minimum Button
+     var num1, num2, num3;
+     num1 = parseInt(frmMin.txtV1.value);
+     num2 = parseInt(frmMin.txtV2.value);
+     num3 = parseInt(frmMin.txtV3.value);
+     var Min;
+     Min = Find_min(num1,num2,num3);
+     alert("Minimum of Three numbers = " + Min)
+  }
+
+  -->
+  </script>
+  </head>
+  <body>
+    <h2> Javascript Client Side Scripting  </h2>
+    <h3>  Writing Your own Functions - Finding Minimum</h3>
+   <pre>
+   Enter some numbers in the three text boxes, then Click on the
+   "Calculate Min" Button to Find the minimum of the three numbers entered:
+     <form name="frmMin">
+     Enter First Number  : <input type="text" name="txtV1">
+     Enter Second Number : <input type="text" name="txtV2">
+     Enter Third Number  : <input type="text" name="txtV3">
+   <input type="button" name="cmdMin" value="Calculate Minimum" onClick="cmdMin_OnClick();">
+   </form>
+   </pre>
+  </body>
+</html>
