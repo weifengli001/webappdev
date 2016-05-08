@@ -1,0 +1,88 @@
+﻿@model XYZEve05MVC.Models.CartItem
+
+@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+
+
+<table id="Table1" border="0" cellpadding="1" cellspacing="1" style="height: 123px"
+       width="800">
+    <tr>
+        <td></td>
+        <td>
+            @ViewData["ProductSDesc"]
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            @ViewData["Price"]
+        </td>
+    </tr>
+    <tr>
+        <td align="left">
+            <img src="@Url.Content("~/PImages/" + @ViewData["ProductImage"])"> 
+        </td>
+        <TD>@ViewData["ProductLDesc"]</TD>
+    </tr>
+    <tr>
+        <td align="right" colspan="2">
+            <hr color="#0000cc" size="3" width="100%" />
+        </td>
+    </tr>
+
+@using (Html.BeginForm("AddToCart", "Product"))
+{
+
+    <tr>
+        <td align="right">
+            Please Enter Quantity
+        </td>
+        <td>
+            @Html.HiddenFor(model => model.ProductId, new { @Value = @ViewData["ProductId"] })
+            @Html.HiddenFor(x => x.ProductSDesc, new { @Value = @ViewData["ProductSDesc"] })
+            @Html.HiddenFor(x => x.Price, new { @Value = @ViewData["Price"] })
+            @Html.TextBoxFor(model => model.Quantity)
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            <input type="submit" value="Add To Cart"/>
+            &nbsp; &nbsp;&nbsp;
+            
+        </td>
+    </tr>
+}
+    <tr>
+        <td align="right"></td>
+        <td align="left" colspan="2"></td>
+    </tr>
+    <tr>
+        <td align="right"></td>
+        <td align="left" colspan="2">
+            @using (Html.BeginForm("ViewCart", "Product"))
+            {
+                <input type="submit" value="View Cart" />
+            }
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            @using (Html.BeginForm("ContinueShopping", "Product"))
+            {
+                <input type="submit" value="Continue Shopping" />
+            }
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        </td>
+    </tr>
+    <tr>
+        <td align="right"></td>
+        <td align="left" colspan="2">
+            @TempData["msg"]
+        </td>
+    </tr>
+</table>
+
+
+
+

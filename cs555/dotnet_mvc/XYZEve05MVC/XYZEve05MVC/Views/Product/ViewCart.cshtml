@@ -1,0 +1,73 @@
+﻿@model XYZEve05MVC.Models.ShoppingCart
+
+@{
+    ViewBag.Title = "ViewCart";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+
+<table id="Table1" border="0" cellpadding="1" cellspacing="1" width="90%">
+    <tr>
+        <td>
+@using (Html.BeginForm("Update", "Product"))
+{
+            <table>
+                <tr>
+                    <th width="10%">Product ID</th>
+                    <th>Product Name</th>
+                    <th width="10">Quantity</th>
+                    <th width="25%">Price/Item</th>
+                    <th width="25%">Total</th>
+                </tr>
+                @if (Model.TotalQty > 0) { 
+                foreach (XYZEve05MVC.Models.CartItem item in Model.list)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ProductId)
+                        </td>
+                        <td>@Html.DisplayFor(modelItem => item.ProductSDesc, new { style = "width:150px;" })</td>
+                        <td>
+                            <input style = "width:40px;" type="text" name="quantity" value="@item.Quantity"/>
+                        </td>
+                        <td align="right">$@Html.DisplayFor(modelItem => item.Price)</td>
+                        <td align="right">$@Html.DisplayFor(modelItem => item.TotalAmount)</td>
+                    </tr>
+                }
+                }
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td align="right">Grand Total $@Html.DisplayFor(model => Model.TotalCost)</td>
+
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <input type="submit" value="Update Cart"/>
+                    </td>
+                </tr>
+            </table>
+}
+
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>
+            <!--
+                <input type="submit" value="Check Out" />
+            -->
+        </td>
+        <td>
+            @using (Html.BeginForm("ContinueShopping", "Product"))
+            {
+                <input type="submit" value="Continue Shopping" />
+            }
+        </td>
+    </tr>
+</table>
+

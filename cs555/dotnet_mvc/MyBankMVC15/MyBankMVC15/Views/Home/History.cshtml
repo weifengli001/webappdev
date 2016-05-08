@@ -1,0 +1,57 @@
+﻿@{
+    ViewBag.Title = "History";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+
+@section header{
+    <link href="~/scripts/jtable/themes/metro/blue/jtable.css" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Scripts/jquery-ui-1.9.2.min.js")" type="text/javascript"></script>
+    <script src="~/scripts/jtable/jquery.jtable.js" type="text/javascript"></script>
+}
+<div id="TransferHistoryContainer"></div>
+
+<script type="text/javascript">
+    
+    $(document).ready(function () {
+        
+        $('#TransferHistoryContainer').jtable({
+            title: 'Table of transfer history',
+            paging: true,
+            pageSize: 10,
+            sorting: true,
+            defaultSorting: 'TransferDate DESC',
+            actions: {
+                listAction: '/Home/getTransHistoryByPage',
+                createAction: '@Url.Action("getTransHistories")',
+                updateAction: '@Url.Action("getTransHistories")',
+                deleteAction: '@Url.Action("getTransHistories")'
+            },
+            fields: {
+                FromAccountNum: {
+                    title: 'From Account Number',
+                    Width: '20%'
+                },
+                ToAccountNum: {
+                    title: 'To Account Number',
+                    width: '20%'
+                },
+                CheckingAccountNumber: {
+                    title: 'Checking Account Number',
+                    width: '20%'
+                },
+                Amount:{
+                    title: 'Amount',
+                    width: '20%'
+                },
+                TransferDate: {
+                    title: 'Transfer date',
+                    width: '20%',
+                    type: 'date',
+                    create: false,
+                    edit: false
+                }
+            }
+        });
+        $('#TransferHistoryContainer').jtable('load');
+    });
+</script>

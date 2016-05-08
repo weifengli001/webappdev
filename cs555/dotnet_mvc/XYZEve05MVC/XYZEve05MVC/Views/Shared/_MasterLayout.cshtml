@@ -1,0 +1,79 @@
+﻿@{ 
+    ViewBag.Title = "_MasterLayout";
+}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="~/Content/MainStyle.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#navTable tr").hover(function () {
+                $(this).addClass("navHighlight");},
+                function(){$(this).removeClass("navHighlight");}
+            );
+        });
+    </script>
+    @RenderSection("header", false)
+</head>
+<body>
+        <div>
+            <table style="width: 100%">
+                <tr>
+                    <td align="center" colspan="2">
+                        <!--img src='<%=Server.MapPath("")+"\\images\\mystorebanner.jpg"%>' /-->
+                        <img src='~/images/mystorebanner.jpg' />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:10%;vertical-align:top;">
+                        <table id="navTable" border="1" style="border-collapse:collapse">
+                            <tr>
+                                <td>@Html.ActionLink("Home", "Index", "Home")</td>
+                            </tr>
+                            <tr>
+                                <td>@Html.ActionLink("Electronics", "Index", "Product", new { catID = 10}, null)</td>
+                            </tr>
+                            <tr>
+                                <td>@Html.ActionLink("Kichen", "Index", "Product", new {catID = 20 }, null)</td>
+                            </tr>
+                            <tr>
+                                <td>@Html.ActionLink("Luggage", "Index", "Product", new {catID = 30 }, null)</td>
+                            </tr>
+                            <tr>
+                                <td>@Html.ActionLink("View Cart", "Index", "Home")</td>
+                            </tr>
+                            <tr>
+                                <td>@Html.ActionLink("News", "News", "Home")</td>
+                            </tr>
+                            <tr>
+                                <td>@Html.ActionLink("Checkout", "Index", "Home")</td>
+                            </tr>
+                            <tr>
+                                <td>@Html.ActionLink("Add Product", "Index", "Home")</td>
+                            </tr>
+                            <tr>
+                                <td>@Html.ActionLink("Upload Image", "Index", "Home")</td>
+                            </tr>
+                            <tr>
+                                <td>@Html.ActionLink("View Products", "Index", "Home")</td>
+                            </tr>
+                            <tr>
+                                <td>@Html.ActionLink("Contact Us", "Contact", "Home")</td>
+                            </tr>
+                            <tr>
+                                <td>@Html.ActionLink("Logout", "Logout", "Home")</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td style="width:90%;vertical-align:top;padding-left:100px;padding-top:20px">
+                        @RenderBody()
+                    </td>
+                </tr>
+            </table>
+            &nbsp;
+        </div>
+</body>
+</html>

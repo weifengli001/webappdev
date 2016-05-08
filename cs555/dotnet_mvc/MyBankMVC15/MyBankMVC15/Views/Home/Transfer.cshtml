@@ -1,0 +1,98 @@
+﻿@model MyBankMVC15.Models.CheckingAccount
+
+@{
+    ViewBag.Title = "Transfer";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+    var ca = ViewData["CheckingAccount"] as MyBankMVC15.Models.CheckingAccount;
+    var sa = ViewData["SavingAccount"] as MyBankMVC15.Models.SavingAccount;
+    Model.CheckingAccountNumber = ca.CheckingAccountNumber;
+}
+
+@section header{
+    <style type="text/css">
+        .style1{
+            width:600px;
+        }
+    </style>    
+}
+
+@using (Html.BeginForm())
+{
+    
+<table class="style1">
+    <tr>
+        <td class="myHeading" colspan="3">
+            Transfer Money from Checking to Savings:
+        </td>
+    </tr>
+    <tr>
+        <td>
+            &nbsp;&nbsp;
+        </td>
+        <td>
+            &nbsp;
+        </td>
+        <td>
+            &nbsp;
+        </td>
+    </tr>
+    <tr>
+        <td>
+            &nbsp;
+        </td>
+        <td align="right">
+            Checking Balance
+        </td>
+        <td>
+            @ca.Balance
+        </td>
+    </tr>
+    <tr>
+        <td>
+            &nbsp;
+        </td>
+        <td align="right">
+            Saving Balance
+        </td>
+        <td>
+            @sa.Balance
+        </td>
+    </tr>
+    <tr>
+        <td>
+            &nbsp;
+        </td>
+        <td>
+            &nbsp;&nbsp;
+        </td>
+        <td>
+            &nbsp;
+        </td>
+    </tr>
+    <tr>
+        <td>
+            &nbsp;
+        </td>
+        <td align="right">
+            Amount To Transfer
+            @Html.TextBoxFor(model => model.Balance)
+            @Html.HiddenFor(model => model.CheckingAccountNumber)
+        </td>
+        <td>
+            <input type="submit" value="Submit" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            &nbsp;
+        </td>
+        <td>
+            &nbsp;
+        </td>
+        <td>
+            @ViewBag.msg
+        </td>
+    </tr>
+</table>
+
+}

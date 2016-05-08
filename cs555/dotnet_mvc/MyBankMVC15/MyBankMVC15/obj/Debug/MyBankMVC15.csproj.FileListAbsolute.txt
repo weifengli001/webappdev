@@ -1,0 +1,67 @@
+D:\csharp2015\Webs\MyBankMVC15\MyBankMVC15\bin\roslyn\csc.exe
+D:\csharp2015\Webs\MyBankMVC15\MyBankMVC15\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\csharp2015\Webs\MyBankMVC15\MyBankMVC15\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\csharp2015\Webs\MyBankMVC15\MyBankMVC15\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\csharp2015\Webs\MyBankMVC15\MyBankMVC15\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\csharp2015\Webs\MyBankMVC15\MyBankMVC15\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\csharp2015\Webs\MyBankMVC15\MyBankMVC15\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\csharp2015\Webs\MyBankMVC15\MyBankMVC15\bin\roslyn\System.Collections.Immutable.dll
+D:\csharp2015\Webs\MyBankMVC15\MyBankMVC15\bin\roslyn\System.Reflection.Metadata.dll
+D:\csharp2015\Webs\MyBankMVC15\MyBankMVC15\bin\roslyn\vbc.exe
+D:\csharp2015\Webs\MyBankMVC15\MyBankMVC15\bin\roslyn\VBCSCompiler.exe
+D:\csharp2015\Webs\MyBankMVC15\MyBankMVC15\bin\roslyn\VBCSCompiler.exe.config
+D:\csharp2015\Webs\MyBankMVC15\MyBankMVC15\bin\MyBankMVC15.dll.config
+D:\csharp2015\Webs\MyBankMVC15\MyBankMVC15\bin\MyBankMVC15.dll
+D:\csharp2015\Webs\MyBankMVC15\MyBankMVC15\bin\MyBankMVC15.pdb
+D:\csharp2015\Webs\MyBankMVC15\MyBankMVC15\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\csharp2015\Webs\MyBankMVC15\MyBankMVC15\bin\Microsoft.Web.Infrastructure.dll
+D:\csharp2015\Webs\MyBankMVC15\MyBankMVC15\bin\System.Web.Helpers.dll
+D:\csharp2015\Webs\MyBankMVC15\MyBankMVC15\bin\System.Web.Mvc.dll
+D:\csharp2015\Webs\MyBankMVC15\MyBankMVC15\bin\System.Web.Razor.dll
+D:\csharp2015\Webs\MyBankMVC15\MyBankMVC15\bin\System.Web.Webpages.Deployment.dll
+D:\csharp2015\Webs\MyBankMVC15\MyBankMVC15\bin\System.Web.Webpages.dll
+D:\csharp2015\Webs\MyBankMVC15\MyBankMVC15\bin\System.Web.Webpages.Razor.dll
+D:\csharp2015\Webs\MyBankMVC15\MyBankMVC15\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\csharp2015\Webs\MyBankMVC15\MyBankMVC15\bin\System.Web.Razor.xml
+D:\csharp2015\Webs\MyBankMVC15\MyBankMVC15\bin\System.Web.Webpages.xml
+D:\csharp2015\Webs\MyBankMVC15\MyBankMVC15\bin\System.Web.Webpages.Deployment.xml
+D:\csharp2015\Webs\MyBankMVC15\MyBankMVC15\bin\System.Web.Webpages.Razor.xml
+D:\csharp2015\Webs\MyBankMVC15\MyBankMVC15\bin\System.Web.Helpers.xml
+D:\csharp2015\Webs\MyBankMVC15\MyBankMVC15\bin\System.Web.Mvc.xml
+D:\csharp2015\Webs\MyBankMVC15\MyBankMVC15\obj\Debug\MyBankMVC15.csprojResolveAssemblyReference.cache
+D:\csharp2015\Webs\MyBankMVC15\MyBankMVC15\obj\Debug\MyBankMVC15.dll
+D:\csharp2015\Webs\MyBankMVC15\MyBankMVC15\obj\Debug\MyBankMVC15.pdb
+C:\Users\weifi\Documents\Visual Studio 2015\Projects\MyBankMVC15\MyBankMVC15\bin\roslyn\csc.exe
+C:\Users\weifi\Documents\Visual Studio 2015\Projects\MyBankMVC15\MyBankMVC15\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\weifi\Documents\Visual Studio 2015\Projects\MyBankMVC15\MyBankMVC15\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\weifi\Documents\Visual Studio 2015\Projects\MyBankMVC15\MyBankMVC15\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\weifi\Documents\Visual Studio 2015\Projects\MyBankMVC15\MyBankMVC15\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\weifi\Documents\Visual Studio 2015\Projects\MyBankMVC15\MyBankMVC15\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\weifi\Documents\Visual Studio 2015\Projects\MyBankMVC15\MyBankMVC15\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\weifi\Documents\Visual Studio 2015\Projects\MyBankMVC15\MyBankMVC15\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\weifi\Documents\Visual Studio 2015\Projects\MyBankMVC15\MyBankMVC15\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\weifi\Documents\Visual Studio 2015\Projects\MyBankMVC15\MyBankMVC15\bin\roslyn\vbc.exe
+C:\Users\weifi\Documents\Visual Studio 2015\Projects\MyBankMVC15\MyBankMVC15\bin\roslyn\VBCSCompiler.exe
+C:\Users\weifi\Documents\Visual Studio 2015\Projects\MyBankMVC15\MyBankMVC15\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\weifi\Documents\Visual Studio 2015\Projects\MyBankMVC15\MyBankMVC15\bin\MyBankMVC15.dll.config
+C:\Users\weifi\Documents\Visual Studio 2015\Projects\MyBankMVC15\MyBankMVC15\bin\MyBankMVC15.dll
+C:\Users\weifi\Documents\Visual Studio 2015\Projects\MyBankMVC15\MyBankMVC15\bin\MyBankMVC15.pdb
+C:\Users\weifi\Documents\Visual Studio 2015\Projects\MyBankMVC15\MyBankMVC15\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\weifi\Documents\Visual Studio 2015\Projects\MyBankMVC15\MyBankMVC15\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\weifi\Documents\Visual Studio 2015\Projects\MyBankMVC15\MyBankMVC15\bin\System.Web.Helpers.dll
+C:\Users\weifi\Documents\Visual Studio 2015\Projects\MyBankMVC15\MyBankMVC15\bin\System.Web.Mvc.dll
+C:\Users\weifi\Documents\Visual Studio 2015\Projects\MyBankMVC15\MyBankMVC15\bin\System.Web.Razor.dll
+C:\Users\weifi\Documents\Visual Studio 2015\Projects\MyBankMVC15\MyBankMVC15\bin\System.Web.Webpages.Deployment.dll
+C:\Users\weifi\Documents\Visual Studio 2015\Projects\MyBankMVC15\MyBankMVC15\bin\System.Web.Webpages.dll
+C:\Users\weifi\Documents\Visual Studio 2015\Projects\MyBankMVC15\MyBankMVC15\bin\System.Web.Webpages.Razor.dll
+C:\Users\weifi\Documents\Visual Studio 2015\Projects\MyBankMVC15\MyBankMVC15\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\weifi\Documents\Visual Studio 2015\Projects\MyBankMVC15\MyBankMVC15\bin\System.Web.Razor.xml
+C:\Users\weifi\Documents\Visual Studio 2015\Projects\MyBankMVC15\MyBankMVC15\bin\System.Web.Webpages.xml
+C:\Users\weifi\Documents\Visual Studio 2015\Projects\MyBankMVC15\MyBankMVC15\bin\System.Web.Webpages.Deployment.xml
+C:\Users\weifi\Documents\Visual Studio 2015\Projects\MyBankMVC15\MyBankMVC15\bin\System.Web.Webpages.Razor.xml
+C:\Users\weifi\Documents\Visual Studio 2015\Projects\MyBankMVC15\MyBankMVC15\bin\System.Web.Helpers.xml
+C:\Users\weifi\Documents\Visual Studio 2015\Projects\MyBankMVC15\MyBankMVC15\bin\System.Web.Mvc.xml
+C:\Users\weifi\Documents\Visual Studio 2015\Projects\MyBankMVC15\MyBankMVC15\obj\Debug\MyBankMVC15.dll
+C:\Users\weifi\Documents\Visual Studio 2015\Projects\MyBankMVC15\MyBankMVC15\obj\Debug\MyBankMVC15.pdb
+C:\Users\weifi\Documents\Visual Studio 2015\Projects\MyBankMVC15\MyBankMVC15\bin\System.Transactions.dll
+C:\Users\weifi\Documents\Visual Studio 2015\Projects\MyBankMVC15\MyBankMVC15\obj\Debug\MyBankMVC15.csprojResolveAssemblyReference.cache

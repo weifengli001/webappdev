@@ -1,0 +1,123 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+
+
+<html>
+<head>
+    <script src="~/scripts/jquery-1.10.2.min.js"></script>
+
+    
+    <script type="text/javascript">       
+        $(document).ready(function () {
+            $('#TransF').hide();
+            $("#btnlogon").click(function () {
+                var UserName = $("#UserName").val();
+                var PassWord = $("#Password").val();
+                $('#TransF').hide();
+                
+                $.ajax({
+                    url: "/Home/Login",
+                    type: "Post",
+                    data: JSON.stringify([UserName, PassWord]), //{ Name: name,
+                    // Address: address, DOB: dob },
+                    contentType: 'application/json; charset=utf-8',
+                    success: function (data) {
+                        $('#logindiv').fadeOut();
+                        $('#Logon').hide();
+                        $('#TransF').show();
+                    },
+                    error: function () { alert('error');
+                    
+                        $('#Logon').show();}
+                });
+
+            });
+        });
+        $(document).ready(function () {
+
+            var itemName = "#btn-about";
+            
+
+            $('#btnTFundsNow').click(function () {
+                $.ajax({
+                    type: 'GET',
+                    
+                    dataType: 'Json',
+                    url: "/Home/TransferFunds",
+                    success: function (data) {
+                        $('#ChkAcntBal').val(data.ChkAcntBal);
+                        $('#SavAcntBal').val(data.SavAcntBal);
+                    },
+                    error: function () { alert('error'); 
+                    },
+                    processData: false,
+                    async: true
+                });
+            });
+
+            $('#btnTransfer').click(function () {
+                var Amount = $('#Amount').val();
+                $.ajax({
+                    type: 'Post',
+                    data: JSON.stringify([Amount]),
+                    contentType: 'application/json; charset=utf-8',
+                    url: "/Home/SavtoChk",
+                    success: function (data) {
+                        $('#ChkAcntBal').val(data.ChkAcntBal);
+                        $('#SavAcntBal').val(data.SavAcntBal);
+                    },
+                    error: function () {
+                        alert('error');
+                    },
+                    processData: false,
+                    async: true
+                });
+            });
+
+           
+        });
+
+       
+
+
+    </script>
+
+
+</head>
+<body>
+
+    <h2>Login section</h2>
+
+    <div  id="logindiv">
+        <input type="text" id="UserName" />
+        <input type="password" id="Password" />
+        <input type="submit" id="btnlogon" name="btnlogon" value="Login" />
+    </div>
+
+    <input type="submit" value="Show Balance" id="btnTFundsNow" /> <br />
+    <div id="TransF">
+
+       
+     
+        Checking Accont Balance :
+        <input type="text" id="ChkAcntBal" /> <br />
+        Saving Account Balance: 
+        <input type="text" id="SavAcntBal" /> <br />
+        Amount : 
+        <input type="text" id="Amount" value="0.00" />
+        <input type="submit" id="btnTransfer" name="btnTransfer" value="Transfer Amount" />
+
+    </div>
+
+
+
+
+    <div id="TransferHistoryContainer"></div>
+
+   
+
+</body>
+
+

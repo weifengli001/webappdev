@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Product>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+
+
+<table  class="table" BackColor="White"
+                    BorderColor="#CC9966"  Font-Size="Small" border="1">
+    <tr>
+        <th>
+            Product Description
+        </th>
+        <th>
+            Product Detail
+        </th>
+        <th>
+            Product Picture
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+
+        <td>
+            @Html.DisplayFor(modelItem => item.ProductSDesc)
+        </td>
+        <td>
+            @Html.ActionLink("detail", "Detail", new { id = item.ProductId})
+        </td>
+        <td>
+            <img  src="@Url.Content("~/PImages/" + @item.ProductImage)"> 
+        </td>
+    </tr>
+}
+
+</table>
